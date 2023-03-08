@@ -31,7 +31,7 @@ display:flex;
 justify-content: center;
 position: fixed;
 top:0;
-left:${({sidebar})=>(sidebar ? '0' : '-100%')};
+left:${({sidebar}) => (sidebar ? '0' : '-100%')};
 transition: 350ms;
 z-index: 10;
 `
@@ -57,7 +57,7 @@ const Sidebar = () => {
         <AiIcons.AiOutlineClose onClick={showSidebar}/>
       </NavIcon>
       {SidebarData.map((item,idx)=>{
-        return<SubMenu item={item} key={idx}/>
+        return <SubMenu item={item} key={idx}/>
 
       })}
       </SidebarWrap>
